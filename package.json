@@ -1,0 +1,38 @@
+{
+  "name": "frying_pan-v2",
+  "version": "2.0.0",
+  "description": "MERN stack project",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder.js",
+    "data:destroy": "node backend/seeder.js -d"
+  },
+  "author": "Israel Sepulveda",
+  "license": "MIT",
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.1",
+    "chart.js": "^4.3.3",
+    "cookie-parser": "^1.4.6",
+    "emailjs-com": "^3.2.0",
+    "express": "^4.18.2",
+    "highcharts": "^11.1.0",
+    "highcharts-react-official": "^3.2.0",
+    "jquery": "^3.7.0",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.3.4",
+    "react-chartjs-2": "^5.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1"
+  }
+}
